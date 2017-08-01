@@ -424,7 +424,7 @@ def main():
           if r.backend == "slack-iwh":
             payload = {
               "text": text,
-              "username": user.fullName,
+              "username": "test",
               "icon_url": user.image
             }
             req = requests.post(r.bURL, json.dumps(payload), headers={'content-type': 'application/json'})
